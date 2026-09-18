@@ -80,7 +80,7 @@ textarea{width:100%;min-height:105px;border:1px solid #bbb;border-radius:12px;pa
 </style>
 
 <style>
-/* ===== 內頁易讀確認版 06：所有規則限定 #unit，首頁 #home 完全不變 ===== */
+/* ===== 內頁易讀確認版 07：所有規則限定 #unit，首頁 #home 完全不變 ===== */
 #unit .stage{font-size:16px;line-height:1.65;font-weight:700;color:#666;}
 #unit p.hint{font-size:17px;line-height:1.75;color:#4f4f4f;}
 
@@ -88,7 +88,7 @@ textarea{width:100%;min-height:105px;border:1px solid #bbb;border-radius:12px;pa
   font-size:22px;line-height:1.72;font-weight:700;color:#111;
 }
 
-/* 本版唯一新調整：例句下方中文翻譯 20px，所有裝置維持 */
+/* ①③ 例句下方中文說明 */
 #unit .example .zh{
   font-size:20px;line-height:1.72;color:#444;
 }
@@ -99,7 +99,12 @@ textarea{width:100%;min-height:105px;border:1px solid #bbb;border-radius:12px;pa
 #unit .recalls .task > div:first-child{
   font-size:22px;line-height:1.75;font-weight:700;color:#111;
 }
-#unit .recalls .task > .zh{font-size:17px;line-height:1.72;color:#444;}
+
+/* 07版新增：②④ 回想題下方中文提示，與例句中文說明同為20px */
+#unit .recalls .task > .zh{
+  font-size:20px;line-height:1.72;color:#444;
+}
+
 #unit .recalls .answer{font-size:20px;line-height:1.72;font-weight:700;color:#111;}
 
 #unit .stage + h2 + .task{
@@ -129,7 +134,8 @@ textarea{width:100%;min-height:105px;border:1px solid #bbb;border-radius:12px;pa
   #unit .example .zh{font-size:20px;}
   #unit .patternNote{font-size:19px;}
   #unit .recalls .task > div:first-child{font-size:21px;}
-  #unit .recalls .task > .zh{font-size:16px;}
+  /* 中文提示在手機／平板也維持20px */
+  #unit .recalls .task > .zh{font-size:20px;}
   #unit .recalls .answer{font-size:19px;}
   #unit .stage + h2 + .task{font-size:21px;}
   #unit .stage + h2 + .prompt{font-size:19px;}
